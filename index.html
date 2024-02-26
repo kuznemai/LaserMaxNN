@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header__menu">
+        <ul class="header__menu_block">
+            <li><a href="#mainPage">Главная</a></li>
+            <li><a href="#service">Услуги</a></li>
+            <li><a href="#faq">Часто задаваемые вопросы</a></li>
+            <li><a href="#equipment">Оборудование</a></li>
+            <li><a href="#location">Расположение</a></li>
+        </ul>
+        <div class="header__menu_contacts">
+            <div><a href="https://www.instagram.com/laser.max.nn" target="_blank"><img
+                    src="img/instagram.png"> </a></div>
+            <div><a href="https://vk.com/lasermaxnn" target="_blank"><img src="img/vk.png"> </a></div>
+            <div><img src="img/phone.png"></div>
+            <div><p>8904-390-3499</p></div>
+        </div>
+    </div>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="img/epil1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/epil2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/epil3.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <!--    <div style="text-align:center">-->
+    <!--        <span class="dot" onclick="currentSlide(1)"></span>-->
+    <!--        <span class="dot" onclick="currentSlide(2)"></span>-->
+    <!--        <span class="dot" onclick="currentSlide(3)"></span>-->
+    <!--        <span class="dot" onclick="currentSlide(4)"></span>-->
+    <!--        <span class="dot" onclick="currentSlide(5)"></span>-->
+    <!--    </div>-->
+
+    <div class="header__menu_inner">
+        <h1>Laser MAX NN</h1>
+        <h2>Лазерая эпиляция в Нижнем Новгороде на мощном диодном аппарате</h2>
+        <p class="orange">Скидка от трех зон!</p>
+        <p class="white">Ноги до колена <span class="line">2100</span>1900p</p>
+        <p class="white">Бикини классика <span class="line">800</span>600p</p>
+    </div>
+
+</header>
+
+<wrapper>
+    <section class="welcome" id="mainPage">
+        <div class="welcome-wrapper">
+            <div class="welcome_greetings">
+                <div class="welcome_greetings_title element-animation">
+                    <h1>Всем привет!</h1>
+                </div>
+                <div class="welcome_desc element-animation">
+                    <p>Меня зовут Мария и я сертифицированный мастер по лазерной эпиляции в Нижнем Новгороде. </p>
+                </div>
+            </div>
+            <div class="welcome_content">
+                <div class="welcome_content_pics">
+                    <div id="main_icon"><img src="img/main-icon.png"></div>
+                    <div class="welcome_icon element-animation"><img src="img/workplace.png"></div>
+                    <div class="welcome_icon element-animation"><img src="img/workplace2.png"></div>
+                </div>
+                <div class="welcome_content_my_info element-animation">
+                    <p>Работаю на новом мощном диодном лазере который входит в топ лучших аппаратов по всему
+                        миру.</p>
+                    <p>Это самая быстрая технология на сегодняшний день, аппарат прошёл все проверки и на нем
+                        разрешено
+                        работать в Америке и ЕС, а это на минуточку очень серьезно. Не каждый аппарат может
+                        похвастаться
+                        лицензией и сертификацией.
+                        Выбирайте для себя самое лучшее, это быстро и безболезненно, а самое главное эффективно!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reasons" id="service">
+        <div class="reasons-wrapper">
+            <div class="reasons_headliner element-animation">
+                <h1>Почему клиенты обращаются именно ко мне</h1>
+            </div>
+
+            <div class="reasons_desc_wrapper">
+            <div class="reasons_desc">
+                <div class="reasons_desc_list">
+                    <div class="reasons_desc_num element-animation">1</div>
+                    <div class="reasons_desc_title element-animation"><h1>Лучшая стоимость услуг</h1></div>
+                    <div class="reasons_desc_text element-animation"><p>Предлагаю услуги эпиляции по самым доступным ценам</p></div>
+                </div>
+
+                <div class="reasons_desc_list">
+                    <div class="reasons_desc_num element-animation">2</div>
+                    <div class="reasons_desc_title element-animation"><h1>Акция по рекомендации</h1></div>
+                    <div class="reasons_desc_text element-animation"><p>Приведи подружку и получи скидку 15% единоразово</p></div>
+                </div>
+
+                <div class="reasons_desc_list">
+                    <div class="reasons_desc_num element-animation">3</div>
+                    <div class="reasons_desc_title element-animation"><h1>Квалифицированный специалист</h1></div>
+                    <div class="reasons_desc_text element-animation"><p>Закончила специальные курсы по эпиляции, поэтому являюсь квалифицированным мастером</p></div>
+                </div>
+
+                <div class="reasons_desc_list">
+                    <div class="reasons_desc_num element-animation">4</div>
+                    <div class="reasons_desc_title element-animation"><h1>Сертификация</h1></div>
+                    <div class="reasons_desc_text element-animation"><p>Перед началом работы предлагаю клиентам ознакомиться с сертификатами</p></div>
+                </div>
+
+            </div>
+
+            <div class="reasons_pic element-animation"><img src="img/mypic.png"></div>
+        </div>
+        </div>
+    </section>
+
+    <section class="harm">
+        <div class="harm_wrapper">
+            <div class="harm_headliner element-animation">
+                <h1>Лазерная эпиляция:вредно или не вредно?</h1>
+            </div>
+            <div class="harm_description element-animation">
+                <h2>Миф 1.Лазерная эпиляция облучение, развитее онкологи</h2>
+                <p>Тысячи исследований подтвердили, что ЛЭ не имеет ничего общего с радиацией, облучением и ультрафиолетом. Это другая длина волны которая не опасна и не достаёт до внутренних органов, излучение всего 3-4 мл.
+                    Его хватает что бы достать до корня волос, но не достаточно чтобы воздействовать на внутренние органы</p>
+                <h2>Миф 2.Лазерная эпиляция и ожоги</h2>
+                <p>Во время процедуры на диодном лазере мастер наносит специальный гель, который является воздушной подушкой между лазером и кожей, поэтому все безопасно. И этого тепла и покалывания которое вы будете чувствовать во время процедуры будет не достаточно для ожога </p>
+                <h2>Миф 3.Лазерная эпиляция и сильная боль</h2>
+                <p>Да, у нас у всех разные болевой порог, но а в большинстве случаев процедура проходит совершено комфортно для Вас. При помощи оборудовании нового поколения, в котором используется мощная система охлаждения манипулы и при использовании геля, вы будете испытывай лёгкое покалывание и тепло. Так же помним, что перед женским циклом чувствительность повышается и лучше приходить после него.</p>
+                <h2>Лазерная эпиляция это безопасно, комфортно, безболезненно и эффективно</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="price_title element-animation">
+            <h1>Прайс</h1>
+            <h2>Стоимость услуг</h2>
+        </div>
+        <div class="price__tags">
+            <div class="price_left element-animation">
+                <ul class="leaders">
+                    <li><span>Руки до локтя</span><span>800/600</span></li>
+                    <li><span>Руки полностью</span><span>1100/900</span></li>
+                    <li><span>Подмышки</span><span>800/600</span></li>
+                    <li><span>Ноги до колена</span><span>2100/1900</span></li>
+                    <li><span>Бедра</span><span>2100/1900</span></li>
+                    <li><span>Ноги полностью</span><span>3100/2900</span></li>
+                    <li><span>Белая линия живота</span><span>400/200</span></li>
+                    <li><span>Живот</span><span>900/700</span></li>
+                    <li><span>Бикини классика</span><span>800/600</span></li>
+                    <li><span>Межбровье/подбородок</span><span>400/200</span></li>
+
+                </ul>
+            </div>
+            <div class="price_right element-animation">
+                <ul class="leaders">
+                    <li><span>Ореолы</span><span>500/300</span></li>
+                    <li><span>Грудь полностью</span><span>800/600</span></li>
+                    <li><span>Торс полностью</span><span>3100/2900</span></li>
+                    <li><span>Ягодицы</span><span>800/600</span></li>
+                    <li><span>Поясница</span><span>1100/900</span></li>
+                    <li><span>Спина полностью</span><span>2100/1900</span></li>
+                    <li><span>Плечи</span><span>500/300</span></li>
+                    <li><span>Зона над губой</span><span>400/200</span></li>
+                    <li><span>Баки/скулы/виски</span><span>400/200</span></li>
+                    <li><span>Пальцы рук/ног</span><span>400/200</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="price_note element-animation">
+            <h2>Через / цена от трех зон</h2>
+        </div>
+    </section>
+
+    <section class="result">
+        <div class="result-wrapper">
+            <div class="result_headliner element-animation">
+                <h1>Когда появится эффект от лазерной эпиляции?</h1>
+            </div>
+
+            <div class="result_desc_wrapper">
+                <div class="result_desc">
+                    <div class="result_desc_list">
+                        <div class="result_desc_num element-animation">1</div>
+                        <div class="result_desc_title" element-animation>
+                            <h1>Результат от лазерной эпиляции заметен уже после первой процедуры.</h1>
+                        </div>
+                    </div>
+
+                    <div class="result_desc_list">
+                        <div class="result_desc_num element-animation">2</div>
+                        <div class="result_desc_title element-animation">
+                            <h1>В течение 10-12 дней наблюдается «ложный рост» волос, волоски, фолликулы которых разрушились, выталкиваются кожей, как будто растут.</h1>
+                        </div>
+                    </div>
+
+                    <div class="result_desc_list">
+                        <div class="result_desc_num element-animation">3</div>
+                        <div class="result_desc_title element-animation">
+                            <h1>Через 10-12 дней эти волоски полностью поднимутся на поверхность кожи и выпадут.</h1>
+                        </div>
+                    </div>
+
+                    <div class="result_desc_list">
+                        <div class="result_desc_num element-animation">4</div>
+                        <div class="result_desc_title element-animation">
+                            <h1>Вы заметите что волоски на обработанном участке поредели. Темные волосы исчезнут быстрее у светлых будет накопительный эффект</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="result_photo">
+        <div class="result_photo_wrapper">
+            <div class="result_photo_headliner element-animation">
+                <h1>Фотографии до и после лазерной эпиляции</h1>
+            </div>
+            <div class="result_photo_CONTAINER">
+                <div class="result_photo__left_block ">
+                    <h2>Спустя 4 недели после 2 х процедур:</h2>
+                    <img class="element-animation" src="img/res1.png">
+                    <img class="element-animation" src="img/res2.png">
+                </div>
+                <div class="result_photo__right_block">
+                    <h2>Удаление светлых тонких волос:</h2>
+                    <img class="element-animation" src="img/res3.png">
+                    <img class="element-animation" src="img/res4.png">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq_wrapper" id="faq">
+        <h1>Часто задаваемые вопросы</h1>
+
+        <div class="faq element-animation">
+            <button class="accordion ">Как правильно подготовиться к лазерной эпиляции
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Начинать подготовку к эпиляции нужно за полтора месяца. К общим правилам относят:</p>
+                <p>отказ от естественного загара и солярия за 1,5 месяца до эпиляции;</p>
+                <p> в жаркое время года нужно пользоваться солнцезащитными кремами с высоким уровнем защиты;</p>
+                <p> за месяц не делать шугаринг, не удалять волоски воском;</p>
+                <p> за две недели прекратить прием лекарственных препаратов;</p>
+                <p> за три дня не пользоваться косметическими средствами с содержанием спирта, не посещать баню,
+                    сауну;</p>
+                <p> за 1-2 дня сбрить волосы в зоне обработки;</p>
+                <p> перед процедурой принять душ без геля и мыла, не наносить кремы и лосьоны.</p>
+            </div>
+        </div>
+
+        <div class="faq element-animation">
+            <button class="accordion ">Когда же будут заметны результаты после процедур ?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>В среднем необходимо 10-12 процедур с промежутком 4-6 недель.
+                    Первые процедуры с интервалом 4-5 недель. К концу курса интервал может достигать 2х месяцев .
+                    После каждой процедуры уходит примерно 20-30% волос.
+                    Первый результат не заставит себя ждать ,уже на 10-14 день вы заметите первые плоды процедур
+                    Помимо выпадения волосков, оставшаяся часть волосков начнёт расти очень медленно, рост замедляется .
+                    Новые волоски отрастают более мягкие и тонкие. С каждой последующей процедурой их становится все
+                    меньше и так до полного прекращения их роста .
+                    В среднем, на полный курс уходит около года , у кого то меньше , у кого то больше.
+                    Гармоназависимые зоны (бикини, подмышки, лицо ) всегда к примеру требуют больше процедур, чем руки и
+                    ноги )
+                    Руки и ноги это самые «благодарные» зоны, на них требуется меньше сеансов.
+                    Так же лазерная эпиляция позволяет избавиться от вросших волос, это доказано на 100% теми кто прошёл
+                    курс </p>
+            </div>
+        </div>
+
+        <div class="faq element-animation">
+            <button class="accordion ">Почему эпиляцию делают с гелем?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Технология проведения процедуры требует использования геля. Для этой цели применяют прозрачный
+                    медиагель, который используют также при УЗИ-диагностике.
+                    1. Гель необходим для того что бы избежать рассеивания луча и сохранить энергию.
+                    2.Гель устраняет воздушную прослойку между кристаллом и кожей.
+                    3.Повышает прозрачность эпидермиса за счёт его увлажнения.
+                    4.Облегчает скольжение манипулы по телу.
+                    5.Гель в сочетании с мощным охлаждением аппарата, делает процедуру безопасной и безболезненной </p>
+            </div>
+        </div>
+
+        <div class="faq element-animation">
+            <button class="accordion">За сколько дней до отауска можно сделать лазерную эпиляцию? Можно ли после нее
+                загорать ?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Лазерная эпиляция на диодном лазере – процедура, не затрагивающая своим воздействием поверхность
+                    кожи, поэтому проводится в любой сезон, даже летом. Мы рекомендуем беречь кожу от солнца в течение 3
+                    дней после эпиляции, чтобы действие солнечных лучей не «реанимировало» повреждённый лазером
+                    волосяной фолликул. Затем можете принимать солнечные ванны. И, пожалуйста, помните о необходимости
+                    солнцезащитных средств –рекомендуем пользоваться ими независимо от того, делали вы эпиляцию или нет!
+                    Ведь прямые солнечные лучи стимулируют рост волос!</p>
+            </div>
+        </div>
+
+        <div class="faq element-animation">
+            <button class="accordion">Можно ли делать процедуру на вросших волосках ?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Нужно! Буквально пара сеансов и ваша кожа будет вас радовать идеальностью. Запишитесь на лазерную
+                    эпиляцию к нам и можете выбирать платья покороче. Вы же помните про линию бикини с вросшими
+                    волосами, предательски выглядывающими из под белья и купальников? Забудьте ! Теперь все будет гладко
+                    надолго . Лазер безжалостен к волосам (вросшим в том числе) и бережно относится к коже. Проведение
+                    процедуры возможно даже когда все 'забрито’. И именно лазерная эпиляция — лучший метод борьбы с
+                    врастанием волос</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment" id="equipment">
+        <div class="equipment_wrapper">
+            <div class="equipment_headliner">
+                <h1  class="element-animation">Про аппарат</h1>
+                <h2 class="element-animation">KIERS-144 в топе лучших !</h2>
+                <p class="element-animation">Преимущества этого диодного лазера по сравнению с другими очень велико, и что бы убедиться в этом вы
+                    можете
+                    придти попробовать эпиляцию на этом лазере, если не довольны результатом в другой студии.</p>
+                <p class="element-animation">Итак посмотрим за счёт чего достигается такое преимущество.</p>
+
+                <ul>
+                    <li>Самая быстрая технология на сегодняшний день.</li>
+                    <li>Быстрая частота повторений-10 импульсов в 1 секунду, это очень высокий показатель по сравнению с
+                        другими
+                        лазерами.
+                    </li>
+                    <li>Размер рабочего пятна 13*13 мм, что тоже превосходит другие модели.</li>
+                    <li>Технология работы in-motion, лазер работает в процессе движения манипулы, а не точечно.</li>
+                </ul>
+                <p>Безболезненность процедуры достигается за счёт температуры сапфирового наконечника который охлаждается до
+                    -10</p>
+                <p>Для любых типов кожи и любого цвета волос. Эффективная работа с фототипии кожи I-IV (включаю
+                    загорелую)</p>
+                <p>Широкие возможности настройки аппарата и выбор индивидуального режима удаление волос для каждого клиента
+                    под
+                    его тип кожи и цвет волос на момент процедуры.</p>
+                <p>Высокий процент удаления волосяные фолликул уже после первой процедуры, благодаря самым эффективным
+                    показателям:</p>
+                <ul>
+                    <li>Длина волны 808нм</li>
+                    <li>высокая пиковая мощность 600w</li>
+                    <li>возможность выбора импульса малой длительности от 3 мкс</li>
+                </ul>
+                <p>Благодаря этим показателям лазер KIERS-144 входит в топ лучших!</p>
+                <p> Ты достойна лучшего!</p>
+            </div>
+            <div class="equipment_pictures">
+                <div class="equipment_pictures_left">
+                    <img class="element-animation" src="img/apparat.png">
+                </div>
+                <div class="equipment_pictures_right element-animation">
+                    <img class="element-animation" src="img/manipula.png">
+                    <img class="element-animation" src="img/gel.png">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+</wrapper>
+
+<footer>
+    <div class="footer_block element-animation" id="location">
+        <div class="footer_block__left">
+            <h1>Расположение</h1>
+            <div><img src="img/location.png">
+                <p>Нижний Новгород, ул.Радио, 6</p></div>
+            <div><img src="img/clock.png">
+                <p>С 10:00 до 19:30</p></div>
+            <div><img src="img/smartphone.png">
+                <p>+7 (904) 390-34-99 по предварительной записи</p></div>
+            <div><a href="https://www.instagram.com/laser.max.nn" target="_blank"><img
+                    src="img/instagram.png"> </a>
+                <p>instagram.com/laser.max.nn</p></div>
+            <div><a href="https://vk.com/lasermaxnn" target="_blank"><img src="img/vk.png"> </a>
+                <p>https://vk.com/lasermaxnn</p></div>
+        </div>
+        <div class="footer_block__right">
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/47/nizhny-novgorod/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Нижний Новгород</a><a
+                    href="https://yandex.ru/maps/47/nizhny-novgorod/house/ulitsa_radio_6/YEoYfwZnTEQGQFtsfX55cHprZQ==/?ll=43.919683%2C56.282257&utm_medium=mapframe&utm_source=maps&z=17.12"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Радио, 6 — Яндекс Карты</a>
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=43.919683%2C56.282257&mode=whatshere&whatshere%5Bpoint%5D=43.917598%2C56.281590&whatshere%5Bzoom%5D=17&z=17.12"
+                        width="460" height="300" frameborder="1" allowfullscreen="true"
+                        style="position:relative;"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+<!--    <a href="https://www.freepik.com/free-photo/beautiful-caucasian-woman-with-towel-against-white-background_27240033.htm#query=laser%20hair%20removal&position=9&from_view=keyword&track=ais&uuid=cd0b435f-332d-4d52-937a-eebf29b66192">Image by benzoix</a> on Freepik-->
+</footer>
+
+</body>
+</html>
