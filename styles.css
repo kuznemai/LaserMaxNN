@@ -418,12 +418,13 @@ header {
 /*Блок прайс*/
 
 .price {
-    background-image: url(img/1.png);
+    background-image: url(img/bgimage.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
 }
+
 .price_title > h1{
     text-align: center;
     color: #d39b79;
@@ -744,20 +745,31 @@ ul.leaders li:after {
     text-transform: none;
     margin-left: 25px;
 }
-.footer_block__left > div > p{
-    font-size: 1.4rem;
+.footer_block__left > div > a > p {
+    font-size: 2.1rem;
     color: #ffffff;
-    margin: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+.footer_block__left > div > a  {
+    text-decoration: none;
+}
+.footer_block__left > div > p {
+    font-size: 2.1rem;
+    color: #ffffff;
 }
 .footer_block__left > div > img{
     width: 8%;
     height: 8%;
 }
 .footer_block__left > div > a > img{
+    width: 70%;
+    height: 70%;
+}
+.footer_block__left > div > a > img{
     width: 60%;
     height: 60%;
 }
-
 
 
 
@@ -787,12 +799,12 @@ ul.leaders li:after {
         flex-direction: row;
         justify-content: center;
         width: 100%;
+        height: 5.5rem;
     }
 
     .header__menu_block {
         display: none;
     }
-
 
     .header__menu_contacts {
         display: flex;
@@ -808,7 +820,7 @@ ul.leaders li:after {
     .header__menu_contacts > div > p {
         color: #ffffff;
         font-size: 2.5rem;
-
+        text-decoration: none;
     }
     .header__menu_contacts > div > img, .header__menu_contacts > div > a > img {
         width: 60%;
@@ -825,9 +837,11 @@ ul.leaders li:after {
     /*Блок контента хедера*/
 
     .header__menu_inner {
-        font-size: 3.5rem;
-        margin: 45px 0;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 50px 0;
     }
 
     .header__menu_inner > h1 {
@@ -836,12 +850,12 @@ ul.leaders li:after {
     }
 
     .header__menu_inner > h2 {
-        font-size: 2.6rem;
+        font-size: 2.7rem;
         padding-bottom: 5px;
     }
 
     .header__menu_inner > .orange {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         color: #ffac99;
         padding-top: 1px;
     }
@@ -852,10 +866,9 @@ ul.leaders li:after {
     }
 
     .white {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         margin: 0 5px;
     }
-
 
     .welcome-wrapper {
         padding: 20px 0;
@@ -901,10 +914,13 @@ ul.leaders li:after {
         max-width: 420px;
         object-fit: cover;
     }
+    .welcome_icon {
+        display: none;
+    }
 
     .welcome_content_my_info > p {
         font-size: 2.5rem;
-        margin: 3.1rem;
+        margin: 2.6rem;
     }
     .welcome_content_my_info  {
         margin-top: 30px;
@@ -932,8 +948,8 @@ ul.leaders li:after {
     }
 
     .reasons_headliner > h1 {
-        text-align: justify;
-        font-size: 3.8rem;
+        text-align: left;
+        font-size: 3.2rem;
         margin:10px;
     }
 
@@ -949,7 +965,7 @@ ul.leaders li:after {
     }
 
     .reasons_desc_title > h1 {
-        font-size: 3.4rem;
+        font-size: 2.8rem;
     }
 
     .reasons_desc_text {
@@ -957,14 +973,14 @@ ul.leaders li:after {
     }
 
     .reasons_desc_text > p {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
 
     .reasons_desc_num {
         font-size: 2rem;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
         margin-top: 10px;
     }
     .reasons_pic{
@@ -988,8 +1004,9 @@ ul.leaders li:after {
     }
 
     .harm_headliner > h1{
-        font-size: 3.8rem;
-        margin-bottom: 20px;
+        text-align: left;
+        font-size: 3.2rem;
+        margin: 30px 0;
     }
     .harm_description {
         width: 100%;
@@ -1007,6 +1024,16 @@ ul.leaders li:after {
 
 
     /*Блок прайс*/
+
+    .price {
+        background-image: url(img/bgimage1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        max-width: 480px;
+        width: 100%;
+    }
 
     .price_title > h1{
         font-size: 3.8rem;
@@ -1031,7 +1058,7 @@ ul.leaders li:after {
     }
 
     ul.leaders li{
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
 
 
@@ -1039,7 +1066,7 @@ ul.leaders li:after {
     .result-wrapper {
         width: 90%;
         margin: 0 20px;
-        padding-bottom: 20px;
+        padding: 20px 0;
     }
 
     .result_desc_wrapper {
@@ -1055,7 +1082,7 @@ ul.leaders li:after {
 
     .result_headliner > h1 {
         text-align: justify;
-        font-size: 3.8rem;
+        font-size: 3.2rem;
         margin:10px;
     }
 
@@ -1065,9 +1092,9 @@ ul.leaders li:after {
     }
     .result_desc_num {
         font-size: 2rem;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
         margin-top: 10px;
     }
     .result_desc_title {
@@ -1077,7 +1104,7 @@ ul.leaders li:after {
     }
 
     .result_desc_title > h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
 
@@ -1096,7 +1123,7 @@ ul.leaders li:after {
         margin: 5px auto;
     }
     .result_photo_headliner > h1 {
-        font-size: 3.6rem;
+        font-size: 3.2rem;
     }
 
 
@@ -1138,7 +1165,7 @@ ul.leaders li:after {
         padding: 20px 0;
     }
     .faq_wrapper > h1{
-        font-size: 3.8rem;
+        font-size: 3.2rem;
         padding: 8px;
         margin-bottom: 10px;
     }
@@ -1154,7 +1181,7 @@ ul.leaders li:after {
 
     }
     .pannel > p{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
     .accordion > i{
         font-size: 2.1rem;
@@ -1180,7 +1207,7 @@ ul.leaders li:after {
     }
     .equipment_headliner > p, .equipment_headliner > ul > li{
         font-size: 2.4rem;
-        margin-bottom: 5px;
+        margin: 10px;
     }
 
     .equipment_headliner > h2{
@@ -1332,6 +1359,7 @@ ul.leaders li:after {
     .welcome_desc > p {
         font-size: 2.4rem;
         margin: 0 5.3rem;
+
     }
 
     .welcome_content {
@@ -1343,7 +1371,7 @@ ul.leaders li:after {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        max-width: 100%;
+        width: 100%;
         gap: 8px;
     }
 
@@ -1351,13 +1379,17 @@ ul.leaders li:after {
         max-width: 100%;
     }
 
-    .welcome_icon > div {
+    .welcome_icon  {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .welcome_icon > div > img {
         object-fit: cover;
     }
-
+    .welcome_content_my_info {
+        margin-top: 3.1rem;
+    }
     .welcome_content_my_info > p {
         font-size: 2.2rem;
         margin: 3.1rem;
@@ -1762,18 +1794,24 @@ ul.leaders li:after {
         display: flex;
         align-self: center;
         max-width: 100%;
-        gap: 0;
+        gap: 15px;
     }
     #main_icon {
-        margin: 10px auto;
+        margin: 0 auto;
     }
     #main_icon > img {
         max-width: 100%;
     }
 
-    .welcome_icon > img {
-        display: none;
-    }
+     .welcome_icon  {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+
+     .welcome_icon > div > img {
+         object-fit: cover;
+     }
 
     .welcome_content_my_info > p {
         font-size: 2.2rem;
