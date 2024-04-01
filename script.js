@@ -75,3 +75,74 @@ function plusSlides(n) {
 }
 
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const dotsContainer = document.querySelector('.slider-dots');
+
+    slides.forEach((slide, index) => {
+        const dot = document.createElement('span');
+        dot.classList.add('slider-dot');
+        if (index === 0) {
+            dot.classList.add('active');
+        }
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+        });
+        dotsContainer.appendChild(dot);
+    });
+
+    let currentSlide = 0;
+    const slideWidth = slides[0].clientWidth; // Умножаем на 3, так как теперь по 3 слайда на странице
+
+    function goToSlide(index) {
+        if (index < 0 || index >= slides.length) return;
+
+        slider.style.transform = `translateX(-${index * slideWidth}px)`;
+        document.querySelector('.slider-dot.active').classList.remove('active');
+        document.querySelectorAll('.slider-dot')[index].classList.add('active');
+        currentSlide = index;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        goToSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 5000);
+});
+
+
+// const slider = document.querySelector('.slider');
+// const prevBtn = document.querySelector('.prevBtn');
+// const nextBtn = document.querySelector('.nextBtn');
+// let counter = 0;
+// const slideWidth = document.querySelector('.slide').clientWidth;
+//
+// nextBtn.addEventListener('click', () => {
+//     if (counter >= 2) return;
+//     counter++;
+//     slider.style.transform = `translateX(${-counter * slideWidth}px)`;
+// });
+//
+// prevBtn.addEventListener('click', () => {
+//     if (counter <= 0) return;
+//     counter--;
+//     slider.style.transform = `translateX(${-counter * slideWidth}px)`;
+// });
+
+
+function openModal(imageUrl) {
+    const modal = document.getElementById('myModal');
+    const modalImg = document.getElementById('modalImg');
+    modal.style.display = 'block';
+    modalImg.src = imageUrl;
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+}
+
+
